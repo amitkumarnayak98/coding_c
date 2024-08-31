@@ -45,4 +45,16 @@ inline int MissingNumber(int arr[], int N)
     return totalXor ^ arrXor;
 }
 
+int linearSearch(int arr[], int n, int target, int index)
+{
+    for (index = 0; index < n; index++)
+    {
+        if (arr[index] == target)
+        {
+            return index; // Return the index if the element is found
+        }
+    }
+    return -1; // Return -1 if the element is not found
+}
+
 #endif
