@@ -57,4 +57,55 @@ int linearSearch(int arr[], int n, int target, int index)
     return -1; // Return -1 if the element is not found
 }
 
+// Function to perform bubble sort on the array
+int bubbleSort(int arr[], int n)
+{
+    int i, j, temp;
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                // swap arr[j] and arr[j+]
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+// Function to perform binary search
+int binarySearch(int arr[], int n, int target)
+{
+    int left = 0, right = n - 1;
+    // while (left <= right)
+    // {
+    // }
+
+    if (left <= right)
+    {
+        int mid = left + ((right - left) / 2);
+
+        // Check if target is present at mid
+        if (arr[mid] == target)
+        {
+            return mid;
+        }
+        else if (arr[mid] < target)
+        {
+            // If target greater, ignore left half
+            return left = mid + 1;
+        }
+        else
+        {
+            // If target is smaller, ignore right half
+            return right = mid - 1;
+        }
+    }
+    // target is not present in the array
+    return -1;
+}
+
 #endif
