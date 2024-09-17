@@ -1,0 +1,13 @@
+Student Information:
+
+Details for student 1: 
+Name: Akankshya Pany
+Date of Birth: 20/06/1999
+Roll No: 10
+Marks: 23.00, 25.00, 26.00
+
+Detail for student 2: 
+Name: Amit Kumar Nayak
+Date of Birth: 30/03/2000
+Roll No: 12
+Marks: 25.00, 26.00, 29.00
